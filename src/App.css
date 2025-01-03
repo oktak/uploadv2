@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  width: 360px;
+  margin-bottom: 500px;
+}
+
+form button {
+  display: block;
+  margin: 8px auto 16px;
+  background-image: linear-gradient(to bottom, #c7d2fe, #e0e7ff);
+}
+
+.form-group {
+  display: block;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+}
+.form-group > input,
+.form-group > textarea {
+  width: 100%;
+  padding: 4px;
+  text-align: left;
+}
+
+.tag-dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tag-list {
+  width: 250px;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 10; /* Ensure it's above other elements */
+  max-height: 200px; /* Set a maximum height and make it scrollable */
+  overflow-y: auto;
+}
+
+.tag-item {
+  background-color: #eee;
+  margin: 2px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}
