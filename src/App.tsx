@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+
+import MatomoTracker from './MatomeTracker';
+
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 const BASEURL =
   import.meta.env.VITE_STRAPI_ENDPOINT_CREATE || 'http://localhost:1337';
 const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || 'secret';
+const matomoUrl = 'https://rumalune.com/gga/';
+const siteId = '2';
 
 interface FormData {
   title: string;
@@ -347,6 +352,7 @@ const App: React.FC = () => {
         <button type='submit'>Submit</button>
       </form>
       <ToastContainer position='bottom-right' />
+      <MatomoTracker siteId={siteId} matomoUrl={matomoUrl} />
     </div>
   );
 };
