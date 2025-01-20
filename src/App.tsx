@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
+import TagAdd from './components/TagAdd';
 import MatomoTracker from './MatomeTracker';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -351,6 +352,10 @@ const App: React.FC = () => {
 
         <button type='submit'>Submit</button>
       </form>
+
+      <hr className='border-1 border-slate-400' />
+      <TagAdd />
+
       <ToastContainer position='bottom-right' />
       <MatomoTracker siteId={siteId} matomoUrl={matomoUrl} />
     </div>
